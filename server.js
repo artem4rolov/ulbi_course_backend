@@ -10,7 +10,7 @@ const router = jsonServer.router(path.resolve(__dirname, 'db.json'));
 server.use(jsonServer.defaults({}));
 server.use(jsonServer.bodyParser);
 
-app.use(cors({
+server.use(cors({
   origin: '*' // или укажи конкретные домены, например ['https://your-frontend-domain.com']
 }));
 
